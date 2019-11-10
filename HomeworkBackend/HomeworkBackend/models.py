@@ -13,5 +13,5 @@ class Snowboarder (models.Model):
     date_of_birth = models.DateField()
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
 
-    def __st__(self): return self.first_name + " " + self.last_name
+    def __str__(self): return self.first_name + " " + self.last_name
 
